@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	double v1, v2, s, t, l;
+	
+	do {
+
+		cout << "Введите скорость первого автомобиля : "; 
+		cin >> v1;
+
+		cout << "\nВведите скорость второго автомобиля : ";
+		cin >> v2;
+
+		cout << "\nВведите начальное растояние между ними : "; 
+		cin >> s;
+
+		cout << "\nВведите время : "; 
+		cin >> t;
+
+		if (v1 >= 0 && v2 >= 0 && s >= 0 && t >= 0) {
+			cout << "\nЧерез " << t << " ч. растояние равно " << (v1 + v2) * t + s << " км." << endl;
+			break;
+		}
+		else
+		{
+			cout << "Некорректные данные!" << endl;
+		}
+
+	} while (true);
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
