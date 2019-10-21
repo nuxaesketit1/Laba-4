@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+
+	double x,y,v;
+	do {
+
+		cout << "Введите вес конфет в кг : " << endl;
+		cin >> x;
+
+		cout << "Введите стоимость конфет за кг : " << endl;
+		cin >> y;
+
+		if (x > 0 && y > 0) {
+
+			cout << "Стоимость 1 кг конфет равна : " << y / x;
+
+			cout << endl;
+
+			do {
+				cout << "Введите другой вес конфет : " << endl;
+				cin >> v;
+
+				if (v > 0) {
+					cout << "Стоимость " << v <<" кг конфет равна : " << v*y;
+					break;
+				}
+				else
+				{
+					cout << "Некорректные данные!" << endl;
+				}
+			} while (true);
+
+			break;
+		}
+		else {
+
+			cout << "Некорректные данные!" << endl;
+		}
+
+	} while (true);
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
