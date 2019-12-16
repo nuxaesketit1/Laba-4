@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+setlocale(LC_ALL, "Russian");
+	int a,x,y,b,c;
+	cout << "X=";
+	cin >> x;
+	cout << "A=";
+	cin >> a;
+	cout << "Y=";
+	cin >> y;
+	b=a/x;      //цена за 1 кг//
+	c=y*b;
+	cout << "Цена за 1 кг - " << b << " рублей" << endl;
+	cout << "Цена за y кг - " << c << " рублей";
+}
