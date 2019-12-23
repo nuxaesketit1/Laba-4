@@ -1,17 +1,11 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-setlocale(LC_ALL, "Russian");
-	int a,x,y,b,c;
-	cout << "X=";
-	cin >> x;
-	cout << "A=";
-	cin >> a;
-	cout << "Y=";
-	cin >> y;
-	b=a/x;      //цена за 1 кг//
-	c=y*b;
-	cout << "Цена за 1 кг - " << b << " рублей" << endl;
-	cout << "Цена за y кг - " << c << " рублей";
+int main()
+{
+    float x,p,p1,y,py;
+    cout<<"Vvedite X,Y i skolko stoit X konfet i"<<endl;
+    cin>>x>>p>>y;
+    p1=x/p;
+    py=y*p1;
+    cout<<"1 kilogram stoit "<<p1<<" rub, Y kilogram stoit "<<py<<" rub"<<endl;
 }
